@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width initial-scale=1.0">
+<title>Password Generator | Javscript Project</title>
+<link rel="stylesheet"href="./pswrdGenerator.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body>
+<div class="container">
+<h1>Password Generator</h1>
+<div class="inputBox">
+<input type="text" id="passBox" class="passBox"disabled/>
+<span class="material-icons" id="copyIcon"><i class="fa-solid fa-copy"></i></span>
+</div>
+<input type="range"min="1"max="30"value="8"id="inputSlider">
+<div class="row">
+<p>password Length</p>
+<span id="sliderValue">4</span>
+</div>
+<div class="row">
+<label for="lowercase">Inlcude lowercase Letter (a-z)</label>
+<input type="checkbox"name="lowercase"id="lowercase">
+</div>
+<div class="row">
+<label for="uppercase">Inlcude uppercase Letter (A-Z)</label>
+<input type="checkbox"name="uppercase"id="uppercase">
+</div>
+<div class="row">
+<label for="numbers">Inlcude Numbers (0-9)</label>
+<input type="checkbox"name="numbers"id="numbers">
+</div>
+<div class="row">
+<label for="symbols">Inlcude Symbols (@ ,- ,*)</label>
+<input type="checkbox"name="symbols"id="symbols">
+</div>
+<button TYPE="button" class="genBtn" id="genBtn">Generate Password</button>
+</div>
+<script src="./pswrdGenerator.js"/>
+</body>
+</html>
